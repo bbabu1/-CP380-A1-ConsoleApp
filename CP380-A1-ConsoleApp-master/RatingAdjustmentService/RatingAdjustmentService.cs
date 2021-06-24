@@ -25,8 +25,8 @@ namespace RatingAdjustment.Services
 
         public double Adjust(double stars, double number_of_ratings)
         {
-            if (stars <= MAX_STARS)
-            {
+          
+           
                 SetPercentPositive(stars);
                 SetQ(number_of_ratings);
                 double a = _percent_positive;
@@ -42,8 +42,8 @@ namespace RatingAdjustment.Services
                 {
                     return stars;
                 }
-            }
-            return 0.0;
+      
+         
         }
     }
 }
